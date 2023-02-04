@@ -1,9 +1,8 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import Vim from '../components/vim';
 import { MenuChoice } from '../types/components/bar';
 
-const Home: NextPage = () => {
+export default function ContactPage() {
 	return (
 		<div>
 			<Head>
@@ -14,9 +13,7 @@ const Home: NextPage = () => {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Vim defaultView={MenuChoice.Home} />
+			<Vim defaultView={MenuChoice.Contact} />
 		</div>
 	);
-};
-
-export default Home;
+}
