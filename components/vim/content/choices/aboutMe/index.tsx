@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function AboutMe() {
 	return (
 		<div className="text-fg4 absolute top-[192px] left-1/2 transform -translate-x-1/2 w-[500px]">
@@ -27,12 +29,12 @@ export default function AboutMe() {
 			<br />
 			<span>
 				Click{' '}
-				<a
+				<Link
 					className="underline text-orange cursor-pointer"
 					href={'/contact'}
 				>
 					here
-				</a>{' '}
+				</Link>{' '}
 				to go to subpage where you can find out how we can contact!
 			</span>
 		</div>

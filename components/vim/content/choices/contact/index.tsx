@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Contact() {
 	const copyToClipboard = (text: string) => {
 		navigator.clipboard.writeText(text);
@@ -54,12 +56,12 @@ export default function Contact() {
 			<br />
 			<span>
 				If you want to know what technologies I use go to{' '}
-				<a
+				<Link
 					className="underline text-orange cursor-pointer"
 					href={'/technologies'}
 				>
 					next subpage
-				</a>
+				</Link>
 			</span>
 		</div>
 	);

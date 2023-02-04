@@ -4,7 +4,7 @@ export default function SideBar() {
 	const [lines, setLines] = useState<number[]>([]);
 	useEffect(() => {
 		const nums = window.screen.availHeight / 24;
-		setLines(Array.from(Array(nums).keys()));
+		setLines(Array.from(Array(40).keys()));
 	}, []);
 
 	return (

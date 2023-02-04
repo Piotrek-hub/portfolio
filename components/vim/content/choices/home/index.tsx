@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
 	return (
 		<div className="text-fg4 select-none absolute top-[144px] left-1/2 transform -translate-x-1/2 w-[400px]">
@@ -45,12 +47,12 @@ export default function Home() {
 				If you are not comfortable with typing you can use{' '}
 				<span className="font-bold">menu in the right corner</span> or
 				you can take a trip by moving to the{' '}
-				<a
+				<Link
 					className="underline text-orange cursor-pointer"
 					href={'/about'}
 				>
 					next subpage
-				</a>
+				</Link>
 				!
 			</span>
 		</div>

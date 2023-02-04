@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Technologies() {
 	return (
 		<div className="text-fg4 absolute top-[192px] left-1/2 transform -translate-x-1/2 w-[500px] ">
@@ -44,12 +46,12 @@ export default function Technologies() {
 			<br />
 			<span>
 				Jump{' '}
-				<a
+				<Link
 					className="underline text-orange cursor-pointer"
 					href={'/projects'}
 				>
 					here
-				</a>{' '}
+				</Link>{' '}
 				to see projects in which I used these technologies
 			</span>
 		</div>
