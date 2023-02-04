@@ -1,9 +1,10 @@
+import Link from 'next/link';
 import SocialLinkProps from '../../../../types/components/socialLink';
 
 export default function SocialLink({ text, url }: SocialLinkProps) {
 	return (
 		<div className="flex items-center justify-start hover:underline">
-			<a
+			<Link
 				href={url}
 				target="_blank"
 				className="flex items-center justify-end"
@@ -14,7 +15,7 @@ export default function SocialLink({ text, url }: SocialLinkProps) {
 						{text}
 					</span>
 				</div>
-			</a>
+			</Link>
 		</div>
 	);
 }

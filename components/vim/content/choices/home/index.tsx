@@ -29,7 +29,8 @@ export default function Home() {
 			<br />
 			<span>You can choose from:</span>
 			<br />
-			&emsp;<span className="">- home</span> &#40;you're already here&#41;
+			&emsp;<span className="">- home</span> &#40;you&apos;re already
+			here&#41;
 			<br />
 			&emsp;<span className="font-bold">- about </span>
 			<br />
@@ -44,8 +45,8 @@ export default function Home() {
 			<br />
 			<br />
 			<span className="">
-				If you are not comfortable with typing you can use{' '}
-				<span className="font-bold">menu in the right corner</span> or
+				If you are not comfortable with typing you can use
+				<span className="font-bold"> menu in the right corner</span> or
 				you can take a trip by moving to the{' '}
 				<Link
 					className="underline text-orange cursor-pointer"

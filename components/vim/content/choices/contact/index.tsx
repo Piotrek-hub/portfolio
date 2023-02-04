@@ -33,24 +33,24 @@ export default function Contact() {
 			<span>Find me on Github:</span>
 			<br />
 			&ensp;{' '}
-			<a
+			<Link
 				className="font-bold cursor-pointer underline hover:decoration-2"
 				target="_blank"
 				href={'https://github.com/Piotrek-hub'}
 			>
 				github.com/Piotrek-hub
-			</a>
+			</Link>
 			<br />
 			<span>Get in touch on linkedin:</span>
 			<br />
 			&ensp;{' '}
-			<a
+			<Link
 				className="font-bold cursor-pointer underline hover:decoration-2"
 				target="_blank"
 				href={'https://www.linkedin.com/in/piotrekgalka/'}
 			>
 				linkedin.com/in/piotrekgalka/
-			</a>
+			</Link>
 			<br />
 			<br />
 			<br />
