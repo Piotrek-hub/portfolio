@@ -2,7 +2,7 @@ import SocialLinkProps from '../../../../types/components/socialLink';
 
 export default function SocialLink({ text, url }: SocialLinkProps) {
 	return (
-		<div className="flex items-center justify-start">
+		<div className="flex items-center justify-start hover:underline">
 			<a
 				href={url}
 				target="_blank"
