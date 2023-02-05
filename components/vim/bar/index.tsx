@@ -129,10 +129,7 @@ export default function Bar({ setCurrentView }: BarProps) {
 								utf-8[unix]
 							</span>
 						</div>
-						<SocialLink
-							text={'My Github'}
-							url={'https://github.com/Piotrek-hub'}
-						/>
+						<SocialLink />
 					</div>
 				</div>
 			</div>
