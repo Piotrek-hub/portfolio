@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function AboutMe() {
 	return (
-		<div className="text-fg4 absolute top-[192px] left-1/2 transform -translate-x-1/2 w-[500px]">
+		<div className="text-fg4 absolute top-[144px]  left-1/2 transform -translate-x-1/2 w-[500px]">
 			<span className="font-bold text-yellow">
 				--Something about me--
 			</span>
@@ -18,7 +18,7 @@ export default function AboutMe() {
 			</span>
 			<br />
 			<br />
-			<span>
+			<span className="text-fg1">
 				You can download my CV{' '}
 				<span className="underline text-green cursor-pointer">
 					here
@@ -31,11 +31,11 @@ export default function AboutMe() {
 				Click{' '}
 				<Link
 					className="underline text-orange cursor-pointer"
-					href={'/contact'}
+					href={'/technologies'}
 				>
 					here
 				</Link>{' '}
-				to go to subpage where you can find out how we can contact!
+				to see what technologies I use!
 			</span>
 		</div>
 	);

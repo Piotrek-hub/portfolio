@@ -6,7 +6,7 @@ export default function Contact() {
 	};
 
 	return (
-		<div className="text-fg4 absolute top-[192px] left-1/2 transform -translate-x-1/2 w-[500px] ">
+		<div className="text-fg4 absolute top-[144px]  left-1/2 transform -translate-x-1/2 w-[500px] ">
 			<span className="font-bold text-yellow">--Get in touch--</span>
 			<br />
 			<br />
@@ -55,12 +55,12 @@ export default function Contact() {
 			<br />
 			<br />
 			<span>
-				If you want to know what technologies I use go to{' '}
+				Go back to{' '}
 				<Link
 					className="underline text-orange cursor-pointer"
-					href={'/technologies'}
+					href={'/'}
 				>
-					next subpage
+					home
 				</Link>
 			</span>
 		</div>

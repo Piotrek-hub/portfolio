@@ -2,11 +2,13 @@ import Link from 'next/link';
 
 export default function Home() {
 	return (
-		<div className="text-fg4 select-none absolute top-[144px] left-1/2 transform -translate-x-1/2 w-[400px]">
+		<div className="text-fg4 select-none absolute top-[144px] left-1/2 transform -translate-x-1/2 w-[500px]">
 			<span className="font-bold text-yellow">--Home--</span>
 			<br />
 			<br />
-			<span className="font-bold">Hello, welcome to my portfolio!</span>
+			<span className="font-bold text-fg1">
+				Hello, welcome to my portfolio!
+			</span>
 			<br />
 			<br />
 			As you may have noticed, this portfolio is inspired by{' '}
@@ -21,7 +23,7 @@ export default function Home() {
 			<br />
 			<br />
 			<br />
-			<span>To open subpage simply type:</span>
+			<span className="text-fg1">To open subpage simply type:</span>
 			<br />
 			<span className="font-bold text-blue">:open</span>{' '}
 			<span>&lt;subpage&gt;</span>
