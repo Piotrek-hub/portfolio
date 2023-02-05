@@ -44,7 +44,6 @@ export default function Projects() {
 						<span className="text-blue">Golang</span>,
 						<span className="text-yellow"> TypeScript</span>
 					</span>
-					<div className="h-[1px] w-full bg-gray mt-[24px]"></div>
 				</div>
 
 				<div>
@@ -66,7 +65,6 @@ export default function Projects() {
 						<span className="text-blue">Golang</span>,
 						<span className="text-yellow"> TypeScript</span>
 					</span>
-					<div className="h-[1px] w-full bg-gray mt-[24px]"></div>
 				</div>
 				<div>
 					-&nbsp;
@@ -85,7 +83,6 @@ export default function Projects() {
 						Used technologies:{' '}
 						<span className="text-yellow"> JavaScript</span>
 					</span>
-					<div className="h-[1px] w-full bg-gray mt-[24px]"></div>
 				</div>
 				<div>
 					-&nbsp;
@@ -107,7 +104,6 @@ export default function Projects() {
 						<span className="text-gray"> Solidity</span>,
 						<span className="text-blue"> Golang</span>
 					</span>
-					<div className="h-[1px] w-full bg-gray mt-[24px]"></div>
 				</div>
 				<div>
 					-&nbsp;
@@ -129,7 +125,6 @@ export default function Projects() {
 						<span className="text-blue"> Golang</span>,
 						<span className="text-gray"> Solidity</span>
 					</span>
-					<div className="h-[1px] w-full bg-gray mt-[24px]"></div>
 				</div>
 				<div>
 					-&nbsp;
@@ -147,7 +142,6 @@ export default function Projects() {
 						<span className="text-yellow"> JavaScript</span>,
 						<span className="text-blue"> Liquid</span>
 					</span>
-					<div className="h-[1px] w-full bg-gray mt-[24px]"></div>
 				</div>
 				<div>
 					-&nbsp;
@@ -164,7 +158,6 @@ export default function Projects() {
 						Used technologies:
 						<span className="text-yellow"> TypeScript</span>
 					</span>
-					<div className="h-[1px] w-full bg-gray mt-[24px]"></div>
 				</div>
 				<div>
 					-&nbsp;
@@ -184,7 +177,6 @@ export default function Projects() {
 						<span className="text-yellow"> TypeScript</span>,
 						<span className="text-gray"> Solidity</span>
 					</span>
-					<div className="h-[1px] w-full bg-gray mt-[24px]"></div>
 				</div>
 				<div>
 					-&nbsp;
@@ -201,7 +193,6 @@ export default function Projects() {
 						Used technologies:
 						<span className="text-yellow"> TypeScript</span>,
 					</span>
-					<div className="h-[1px] w-full bg-gray mt-[24px]"></div>
 				</div>
 			</div>
 		</div>

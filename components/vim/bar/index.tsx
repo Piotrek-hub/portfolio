@@ -97,10 +97,6 @@ export default function Bar({ setCurrentView }: BarProps) {
 		};
 	}, [isTypingCommand, command]);
 
-	// useEffect(() => {
-	// 	console.log(command);
-	// }, [command]);
-
 	return (
 		<div className="w-full h-[24px] bg-bg1 absolute bottom-0 left-0 flex items-center justify-between select-none">
 			<div className="flex items-center justify-start">
