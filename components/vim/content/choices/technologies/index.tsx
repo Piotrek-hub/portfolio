@@ -2,13 +2,13 @@ import Link from 'next/link';
 
 export default function Technologies() {
 	return (
-		<div className="text-fg4 absolute top-[192px] left-1/2 transform -translate-x-1/2 w-[500px] ">
+		<div className="text-fg4 absolute top-[144px]  left-1/2 transform -translate-x-1/2 w-[500px] ">
 			<span className="font-bold text-yellow">
 				--Technologies & Skills--
 			</span>
 			<br />
 			<br />
-			<span className="font-bold">Technologies I use:</span>
+			<span className="font-bold text-fg1">Technologies I use:</span>
 			<br />
 			&ensp; <span>- JavaScript/TypeScript</span>
 			<br />
@@ -19,7 +19,9 @@ export default function Technologies() {
 			&ensp; <span>- Docker</span>
 			<br />
 			<br />
-			<span className="font-bold">Frameworks/Libraries I use:</span>
+			<span className="font-bold text-fg1">
+				Frameworks/Libraries I use:
+			</span>
 			<br />
 			&ensp; <span>- go-gin</span>
 			<br />
@@ -30,7 +32,7 @@ export default function Technologies() {
 			&ensp; <span>- Tailwind/SASS/SCSS</span>
 			<br />
 			<br />
-			<span className="font-bold">Skills:</span>
+			<span className="font-bold text-fg1">Skills:</span>
 			<br />
 			&ensp;{' '}
 			<span>

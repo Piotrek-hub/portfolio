@@ -23,16 +23,6 @@ export default function Navbar() {
 			</Link>
 
 			<Link
-				href={'/contact'}
-				className={` hover:underline cursor-pointer ${
-					router.route == '/contact'
-						? 'font-bold text-fg1'
-						: 'text-fg4'
-				}`}
-			>
-				Contact
-			</Link>
-			<Link
 				href={'/technologies'}
 				className={` hover:underline cursor-pointer ${
 					router.route == '/technologies'
@@ -61,6 +51,16 @@ export default function Navbar() {
 				}`}
 			>
 				Experience
+			</Link>
+			<Link
+				href={'/contact'}
+				className={` hover:underline cursor-pointer ${
+					router.route == '/contact'
+						? 'font-bold text-fg1'
+						: 'text-fg4'
+				}`}
+			>
+				Contact
 			</Link>
 		</div>
 	);
