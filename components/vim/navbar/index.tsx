@@ -1,10 +1,14 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-export default function Navbar() {
+export default function Navbar({ marginTop }: { marginTop: number }) {
 	const router = useRouter();
 	return (
-		<div className="absolute top-[48px] left-1/2 transform -translate-x-1/2 flex items-center gap-[24px] ">
+		<div
+			className={`z-[10] absolute top-[${
+				48 + marginTop
+			}px] left-1/2 transform -translate-x-1/2 flex items-center gap-[24px]`}
+		>
 			<Link
 				href={'/'}
 				className={` hover:underline cursor-pointer ${

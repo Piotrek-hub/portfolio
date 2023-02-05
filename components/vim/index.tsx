@@ -8,15 +8,19 @@ import Navbar from './navbar';
 export default function Vim({ defaultView }: VimProps) {
 	const [currentView, setCurrentView] = useState<MenuChoice>(defaultView);
 	const [screenWidth, setScreenWidth] = useState(0);
+	const [marginTop, setMarginTop] = useState<number>(0);
 
 	useEffect(() => {
 		setScreenWidth(window.innerWidth);
+		setMarginTop(window.innerHeight % 24);
 	}, []);
 	return (
-		<div className="w-full h-[100vh] relative bg-bg0">
+		<div
+			className={`w-full h-[100vh] relative bg-bg0 top-[${marginTop}.px]`}
+		>
 			{screenWidth > 1280 ? (
 				<>
-					<Navbar />
+					<Navbar marginTop={marginTop} />
 					<Content currentView={currentView} />
 					<Bar setCurrentView={setCurrentView} />
 				</>
