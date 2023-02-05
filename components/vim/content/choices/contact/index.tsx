@@ -1,13 +1,31 @@
 import Link from 'next/link';
+import { useRef, useEffect } from 'react';
+import Typed from 'typed.js';
 
 export default function Contact() {
 	const copyToClipboard = (text: string) => {
 		navigator.clipboard.writeText(text);
 	};
+	const typedRef = useRef(null);
 
+	useEffect(() => {
+		const options = {
+			strings: ['--Get in touch--'],
+			typeSpeed: 40,
+			showCursor: false,
+		};
+
+		const typed = new Typed(typedRef.current || '', options);
+		return () => {
+			typed.destroy();
+		};
+	}, []);
 	return (
 		<div className="text-fg4 absolute top-[144px]  left-1/2 transform -translate-x-1/2 w-[500px] ">
-			<span className="font-bold text-yellow">--Get in touch--</span>
+			<span
+				className="font-bold text-yellow h-[24px] w-full block "
+				ref={typedRef}
+			></span>
 			<br />
 			<br />
 			<span>You can call me on my phone:</span>

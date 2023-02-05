@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
-export default function Navbar({ marginTop }: { marginTop: number }) {
+export default function Navbar() {
 	const router = useRouter();
+
 	return (
 		<div
-			className={`z-[10] absolute top-[${
-				48 + marginTop
-			}px] left-1/2 transform -translate-x-1/2 flex items-center gap-[24px]`}
+			className={`z-[10] absolute top-[55px] left-1/2 transform -translate-x-1/2 flex items-center gap-[24px]`}
 		>
 			<Link
 				href={'/'}

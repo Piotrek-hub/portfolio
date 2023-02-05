@@ -16,11 +16,11 @@ export default function Vim({ defaultView }: VimProps) {
 	}, []);
 	return (
 		<div
-			className={`w-full h-[100vh] relative bg-bg0 top-[${marginTop}.px]`}
+			className={`w-full h-[100vh] relative bg-bg0 pt-[${marginTop}.px]`}
 		>
 			{screenWidth > 1280 ? (
 				<>
-					<Navbar marginTop={marginTop} />
+					<Navbar />
 					<Content currentView={currentView} />
 					<Bar setCurrentView={setCurrentView} />
 				</>

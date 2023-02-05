@@ -1,9 +1,28 @@
 import Link from 'next/link';
+import { useRef, useEffect } from 'react';
+import Typed from 'typed.js';
 
 export default function Projects() {
+	const typedRef = useRef(null);
+
+	useEffect(() => {
+		const options = {
+			strings: ['--My Projects--'],
+			typeSpeed: 40,
+			showCursor: false,
+		};
+
+		const typed = new Typed(typedRef.current || '', options);
+		return () => {
+			typed.destroy();
+		};
+	}, []);
 	return (
 		<div className="text-fg4 absolute top-[144px]  left-1/2 transform -translate-x-1/2 w-[1280px] ">
-			<span className="font-bold text-yellow">--My Projects--</span>
+			<span
+				className="font-bold text-yellow h-[24px] w-full block "
+				ref={typedRef}
+			></span>
 
 			<div className="w-full h-full grid grid-cols-3 mt-[48px] gap-[24px] ">
 				<div>
