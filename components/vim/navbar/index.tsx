@@ -4,32 +4,38 @@ import { useEffect, useState } from 'react';
 
 export default function Navbar() {
 	const router = useRouter();
+	const [currentSection, setCurrentSection] = useState<string>('home');
 
 	return (
 		<div
-			className={`z-[10] absolute top-[55px] left-1/2 transform -translate-x-1/2 flex items-center gap-[24px]`}
+			className={`z-[10] fixed top-[55px] left-1/2 transform -translate-x-1/2 flex items-center gap-[24px] bg-bg0 px-[24px] py-[24px] border-[0.5px] border-bg2 border-solid rounded-[2px]`}
 		>
 			<Link
-				href={'/'}
+				href={'#home'}
+				onClick={() => setCurrentSection('home')}
 				className={` hover:underline cursor-pointer ${
-					router.route == '/' ? 'font-bold text-fg1' : 'text-fg4'
+					currentSection == 'home' ? 'font-bold text-fg1' : 'text-fg4'
 				}`}
 			>
 				Home
 			</Link>
 			<Link
-				href={'/about'}
+				href={'#about'}
+				onClick={() => setCurrentSection('about')}
 				className={` hover:underline cursor-pointer ${
-					router.route == '/about' ? 'font-bold text-fg1' : 'text-fg4'
+					currentSection == 'about'
+						? 'font-bold text-fg1'
+						: 'text-fg4'
 				}`}
 			>
 				About
 			</Link>
 
 			<Link
-				href={'/technologies'}
+				href={'#technologies'}
+				onClick={() => setCurrentSection('technologies')}
 				className={` hover:underline cursor-pointer ${
-					router.route == '/technologies'
+					currentSection == 'technologies'
 						? 'font-bold text-fg1'
 						: 'text-fg4'
 				}`}
@@ -37,9 +43,10 @@ export default function Navbar() {
 				Technologies
 			</Link>
 			<Link
-				href={'/projects'}
+				href={'#projects'}
+				onClick={() => setCurrentSection('projects')}
 				className={` hover:underline cursor-pointer ${
-					router.route == '/projects'
+					currentSection == 'projects'
 						? 'font-bold text-fg1'
 						: 'text-fg4'
 				}`}
@@ -47,9 +54,10 @@ export default function Navbar() {
 				Projects
 			</Link>
 			<Link
-				href={'/experience'}
+				href={'#experience'}
+				onClick={() => setCurrentSection('experience')}
 				className={` hover:underline cursor-pointer ${
-					router.route == '/experience'
+					currentSection == 'experience'
 						? 'font-bold text-fg1'
 						: 'text-fg4'
 				}`}
@@ -57,9 +65,10 @@ export default function Navbar() {
 				Experience
 			</Link>
 			<Link
-				href={'/contact'}
+				href={'#contact'}
+				onClick={() => setCurrentSection('contact')}
 				className={` hover:underline cursor-pointer ${
-					router.route == '/contact'
+					currentSection == 'contact'
 						? 'font-bold text-fg1'
 						: 'text-fg4'
 				}`}

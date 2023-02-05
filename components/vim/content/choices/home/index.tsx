@@ -19,7 +19,7 @@ export default function Home() {
 	}, []);
 
 	return (
-		<div className="text-fg4 absolute top-[144px] left-1/2 transform -translate-x-1/2 w-[500px]">
+		<div className="pt-[150px] text-fg4 w-[500px] pt-[144px]" id="home">
 			<span
 				className="font-bold text-yellow h-[24px] w-full block "
 				ref={typedRef}
@@ -35,12 +35,25 @@ export default function Home() {
 			<span className="text-aqua font-bold">Vim</span> text editor
 			<br />
 			<br />
+			<span className="">
+				If you are not comfortable with typing you can use
+				<span className="font-bold"> menu above</span> or you can take a
+				trip by moving to the{' '}
+				<Link
+					className="underline text-orange cursor-pointer"
+					href={'/about'}
+				>
+					next subpage
+				</Link>
+				!
+			</span>
+			<br />
+			<br />
 			<span>
 				I will give you{' '}
 				<span className="font-bold">useful instructions</span> on how to
 				navigate on this site. Have fun!
 			</span>
-			<br />
 			<br />
 			<br />
 			<span className="text-fg1">To open subpage simply type:</span>
@@ -66,18 +79,6 @@ export default function Home() {
 			<br />
 			<br />
 			<br />
-			<span className="">
-				If you are not comfortable with typing you can use
-				<span className="font-bold"> menu in the right corner</span> or
-				you can take a trip by moving to the{' '}
-				<Link
-					className="underline text-orange cursor-pointer"
-					href={'/about'}
-				>
-					next subpage
-				</Link>
-				!
-			</span>
 		</div>
 	);
 }

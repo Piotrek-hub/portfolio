@@ -11,10 +11,10 @@ import SideBar from './sideBar';
 export default function Content({ currentView }: ContentProps) {
 	return (
 		<div
-			className={`w-full h-full flex items-start justify-start selection:bg-bg1 leading-[24px] relative top-[7px]`}
+			className={`w-full h-full flex items-center justify-start flex-col selection:bg-bg1 leading-[24px] relative top-[7px] gap-[144px]`}
 		>
 			<SideBar />
-			<div className="">{currentView == MenuChoice.Home && <Home />}</div>
+			{/* <div className="">{currentView == MenuChoice.Home && <Home />}</div>
 			<div className="">
 				{currentView == MenuChoice.AboutMe && <AboutMe />}
 			</div>
@@ -29,7 +29,13 @@ export default function Content({ currentView }: ContentProps) {
 			</div>
 			<div className="">
 				{currentView == MenuChoice.Experience && <Experience />}
-			</div>
+			</div> */}
+			<Home />
+			<AboutMe />
+			<Technologies />
+			<Projects />
+			<Experience />
+			<Contact />
 		</div>
 	);
 }

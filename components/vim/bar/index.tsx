@@ -8,6 +8,12 @@ import Mode from './mode';
 import SocialLink from './socialLink/index.';
 
 export default function Bar({ setCurrentView }: BarProps) {
+	const router = useRouter();
+
+	const [command, setCommand] = useState<String>('');
+	const [isTypingCommand, setIsTypingComman] = useState<Boolean>(false);
+	const [randomExtension, setRandomExtension] = useState<string>('go');
+
 	const langExtensionsArray = [
 		'go',
 		'js',
@@ -20,46 +26,20 @@ export default function Bar({ setCurrentView }: BarProps) {
 		'java',
 	];
 
-	const [randomExtension, setRandomExtension] = useState<string>('go');
-	useEffect(() => {
-		setRandomExtension(
-			langExtensionsArray[
-				Math.floor(Math.random() * langExtensionsArray.length)
-			]
-		);
-	}, []);
-
-	const router = useRouter();
-
-	const [command, setCommand] = useState<String>('');
-	const [isTypingCommand, setIsTypingComman] = useState<Boolean>(false);
-
 	const executeCommand = () => {
 		const splittedCommand = command.split(' ');
 		if (splittedCommand[0] == 'open') {
-			switch (splittedCommand[1]) {
-				case 'home':
-					router.push('/');
-					break;
-				case 'about':
-					router.push('/about');
-					break;
-				case 'contact':
-					router.push('/contact');
-					break;
-				case 'technologies':
-					router.push('/technologies');
-					break;
-				case 'projects':
-					router.push('/projects');
-					break;
-				case 'experience':
-					router.push('/experience');
-					break;
-				default:
-					console.log('ERROR');
-					break;
-			}
+			if (
+				[
+					'home',
+					'about',
+					'technologies',
+					'projects',
+					'experience',
+					'contact',
+				].includes(splittedCommand[1])
+			)
+				router.push(`#${splittedCommand[1]}`);
 		}
 	};
 
@@ -90,6 +70,14 @@ export default function Bar({ setCurrentView }: BarProps) {
 	};
 
 	useEffect(() => {
+		setRandomExtension(
+			langExtensionsArray[
+				Math.floor(Math.random() * langExtensionsArray.length)
+			]
+		);
+	}, []);
+
+	useEffect(() => {
 		window.addEventListener('keyup', handleCommand);
 
 		return function cleanup() {
@@ -98,7 +86,7 @@ export default function Bar({ setCurrentView }: BarProps) {
 	}, [isTypingCommand, command]);
 
 	return (
-		<div className="w-full h-[24px] bg-bg1 absolute bottom-0 left-0 flex items-center justify-between select-none">
+		<div className="w-full h-[24px] bg-bg1 fixed bottom-0 left-0 flex items-center justify-between select-none">
 			<div className="flex items-center justify-start">
 				{isTypingCommand ? (
 					<div className="ml-[5px]">

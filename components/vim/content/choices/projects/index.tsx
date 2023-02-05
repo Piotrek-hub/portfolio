@@ -18,7 +18,7 @@ export default function Projects() {
 		};
 	}, []);
 	return (
-		<div className="text-fg4 absolute top-[144px]  left-1/2 transform -translate-x-1/2 w-[1280px] ">
+		<div className="text-fg4  w-[1280px] pt-[150px]" id="projects">
 			<span
 				className="font-bold text-yellow h-[24px] w-full block "
 				ref={typedRef}
@@ -33,11 +33,6 @@ export default function Projects() {
 						</span>
 					</Link>
 					<br />
-					<br />
-					<span className="">
-						You can login to app by scanning qr code shown on web
-						browser using mobile app.
-					</span>
 					<br />
 					<span className="">
 						Used technologies:{' '}
@@ -56,11 +51,6 @@ export default function Projects() {
 					<br />
 					<br />
 					<span className="">
-						This app allows users to add their books to track their
-						reading progress
-					</span>
-					<br />
-					<span className="">
 						Used technologies:{' '}
 						<span className="text-blue">Golang</span>,
 						<span className="text-yellow"> TypeScript</span>
@@ -76,10 +66,6 @@ export default function Projects() {
 					<br />
 					<br />
 					<span className="">
-						This is website about space tourism.
-					</span>
-					<br />
-					<span className="">
 						Used technologies:{' '}
 						<span className="text-yellow"> JavaScript</span>
 					</span>
@@ -92,11 +78,6 @@ export default function Projects() {
 						</span>
 					</Link>
 					<br />
-					<br />
-					<span className="">
-						On this website users can sell their houses as
-						NFT&apos;s.
-					</span>
 					<br />
 					<span className="">
 						Used technologies:
@@ -115,11 +96,6 @@ export default function Projects() {
 					<br />
 					<br />
 					<span className="">
-						Using this website users can earn tokens by recycling.
-						Project created for the competition
-					</span>
-					<br />
-					<span className="">
 						Used technologies:
 						<span className="text-yellow"> JavaScript</span>,
 						<span className="text-blue"> Golang</span>,
@@ -135,11 +111,8 @@ export default function Projects() {
 					</Link>
 					<br />
 					<br />
-					<span className="">Landing page for web store.</span>
-					<br />
 					<span className="">
 						Used technologies:
-						<span className="text-yellow"> JavaScript</span>,
 						<span className="text-blue"> Liquid</span>
 					</span>
 				</div>
@@ -151,8 +124,6 @@ export default function Projects() {
 						</span>
 					</Link>
 					<br />
-					<br />
-					<span className="">Website for Funko Pop seller.</span>
 					<br />
 					<span className="">
 						Used technologies:
@@ -169,10 +140,6 @@ export default function Projects() {
 					<br />
 					<br />
 					<span className="">
-						Created decentralized social media platoform
-					</span>
-					<br />
-					<span className="">
 						Used technologies:
 						<span className="text-yellow"> TypeScript</span>,
 						<span className="text-gray"> Solidity</span>
@@ -186,8 +153,6 @@ export default function Projects() {
 						</span>
 					</Link>
 					<br />
-					<br />
-					<span className="">Landing page for client</span>
 					<br />
 					<span className="">
 						Used technologies:

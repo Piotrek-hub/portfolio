@@ -10,5 +10,6 @@ body {
   margin: 0;
   font-family: 'JetBrains Mono';
   background-color: #282828;
-  overflow: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
