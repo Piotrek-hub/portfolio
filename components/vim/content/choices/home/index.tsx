@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Home() {
 	return (
-		<div className="text-fg4 select-none absolute top-[144px] left-1/2 transform -translate-x-1/2 w-[500px]">
+		<div className="text-fg4 absolute top-[144px] left-1/2 transform -translate-x-1/2 w-[500px]">
 			<span className="font-bold text-yellow">--Home--</span>
 			<br />
 			<br />

@@ -78,7 +78,8 @@ export default function Projects() {
 					<br />
 					<br />
 					<span className="">
-						On this website users can sell their houses as NFT's.
+						On this website users can sell their houses as
+						NFT&apos;s.
 					</span>
 					<br />
 					<span className="">

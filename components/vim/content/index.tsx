@@ -10,7 +10,7 @@ import SideBar from './sideBar';
 export default function Content({ currentView }: ContentProps) {
 	return (
 		<div
-			className={`w-full h-full flex items-start justify-start selection:bg-bg1 leading-[24px] pt-[24px]`}
+			className={`w-full h-full flex items-start justify-start selection:bg-bg1 leading-[24px]`}
 		>
 			<SideBar />
 			<div className="">{currentView == MenuChoice.Home && <Home />}</div>
