@@ -53,6 +53,9 @@ export default function Bar({ setCurrentView }: BarProps) {
 				case 'projects':
 					router.push('/projects');
 					break;
+				case 'experience':
+					router.push('/experience');
+					break;
 				default:
 					console.log('ERROR');
 					break;
