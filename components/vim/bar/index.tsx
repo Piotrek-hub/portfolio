@@ -37,6 +37,7 @@ export default function Bar({ setCurrentView }: BarProps) {
 	const executeCommand = () => {
 		const splittedCommand = command.split(' ');
 		if (splittedCommand[0] == 'open') {
+
 			switch (splittedCommand[1]) {
 				case 'home':
 					router.push('/');
@@ -97,13 +98,9 @@ export default function Bar({ setCurrentView }: BarProps) {
 		};
 	}, [isTypingCommand, command]);
 
-	// useEffect(() => {
-	// 	console.log(command);
-	// }, [command]);
-
 	return (
-		<div className="w-full h-[24px] bg-bg1 absolute bottom-0 left-0 flex items-center justify-between select-none">
-			<div className="flex items-center justify-start">
+		<div className="mobile:fixed w-full h-[24px] bg-bg1 absolute bottom-0 left-0 flex items-center justify-between select-none">
+			<div className="flex items-center justify-start ">
 				{isTypingCommand ? (
 					<div className="ml-[5px]">
 						<span className="text-fg4 font-bold">:{command}</span>

@@ -18,13 +18,13 @@ export default function Projects() {
 		};
 	}, []);
 	return (
-		<div className="text-fg4 absolute top-[144px]  left-1/2 transform -translate-x-1/2 w-[1280px] ">
+		<div className="text-fg4 absolute top-[144px] left-1/2 transform -translate-x-1/2 w-[1280px] mobile:top-[240px] mobile:pb-[50px] mobile:pb-[200px] tablet:px-[50px] tablet:w-[100%]">
 			<span
 				className="font-bold text-yellow h-[24px] w-full block "
 				ref={typedRef}
 			></span>
 
-			<div className="w-full h-full grid grid-cols-3 mt-[48px] gap-[24px] ">
+			<div className="w-full h-full grid grid-cols-3 mt-[48px] gap-[24px] mobile:!grid-cols-1  tablet:grid-cols-2">
 				<div>
 					-&nbsp;
 					<Link href="https://github.com/Piotrek-hub/qr-backend">

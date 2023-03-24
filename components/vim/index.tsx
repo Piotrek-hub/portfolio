@@ -18,17 +18,11 @@ export default function Vim({ defaultView }: VimProps) {
 		<div
 			className={`w-full h-[100vh] relative bg-bg0 pt-[${marginTop}.px]`}
 		>
-			{screenWidth > 1280 ? (
-				<>
-					<Navbar />
-					<Content currentView={currentView} />
-					<Bar setCurrentView={setCurrentView} />
-				</>
-			) : (
-				<div className="text-fg0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full  text-center px-[20px]">
-					Website not available on screen smaller than 1280px
-				</div>
-			)}
+			<>
+				<Navbar />
+				<Content currentView={currentView} />
+				<Bar setCurrentView={setCurrentView} />
+			</>
 		</div>
 	);
 }

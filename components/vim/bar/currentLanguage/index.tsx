@@ -10,7 +10,7 @@ export default function CurrentLanguage({
 	}, []);
 
 	return (
-		<div className="mr-[15px]">
+		<div className="mr-[15px] mobile:hidden">
 			<span className="text-fg4 font-bold">{platform}</span>
 		</div>
 	);

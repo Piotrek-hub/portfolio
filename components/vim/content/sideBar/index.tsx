@@ -9,7 +9,7 @@ export default function SideBar() {
 	}, []);
 
 	return (
-		<div className="w-[24px] h-full flex flex-col overflow-hidden items-end justify-start select-none">
+		<div className="w-[24px] h-full flex flex-col overflow-hidden items-end justify-start select-none mobile:hidden">
 			{lines.map((lineNumber) => (
 				<span
 					className="leading-[24px] font-bold text-fg4"

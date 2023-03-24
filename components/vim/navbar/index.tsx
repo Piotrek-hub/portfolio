@@ -4,15 +4,16 @@ import { useEffect, useState } from 'react';
 
 export default function Navbar() {
 	const router = useRouter();
+	const route = router.route
 
 	return (
 		<div
-			className={`z-[10] absolute top-[55px] left-1/2 transform -translate-x-1/2 flex items-center gap-[24px]`}
+			className={`z-[10] absolute top-[55px] left-1/2 transform -translate-x-1/2 flex items-center justify-between gap-[24px] mobile:flex-wrap mobile:w-[100%] mobile:px-[50px]`}
 		>
 			<Link
 				href={'/'}
 				className={` hover:underline cursor-pointer ${
-					router.route == '/' ? 'font-bold text-fg1' : 'text-fg4'
+					route == '/' ? 'font-bold text-fg1' : 'text-fg4'
 				}`}
 			>
 				Home
@@ -20,7 +21,7 @@ export default function Navbar() {
 			<Link
 				href={'/about'}
 				className={` hover:underline cursor-pointer ${
-					router.route == '/about' ? 'font-bold text-fg1' : 'text-fg4'
+					route == '/about' ? 'font-bold text-fg1' : 'text-fg4'
 				}`}
 			>
 				About
@@ -29,7 +30,7 @@ export default function Navbar() {
 			<Link
 				href={'/technologies'}
 				className={` hover:underline cursor-pointer ${
-					router.route == '/technologies'
+					route == '/technologies'
 						? 'font-bold text-fg1'
 						: 'text-fg4'
 				}`}
@@ -39,7 +40,7 @@ export default function Navbar() {
 			<Link
 				href={'/projects'}
 				className={` hover:underline cursor-pointer ${
-					router.route == '/projects'
+					route == '/projects'
 						? 'font-bold text-fg1'
 						: 'text-fg4'
 				}`}
@@ -49,7 +50,7 @@ export default function Navbar() {
 			<Link
 				href={'/experience'}
 				className={` hover:underline cursor-pointer ${
-					router.route == '/experience'
+					route == '/experience'
 						? 'font-bold text-fg1'
 						: 'text-fg4'
 				}`}
@@ -59,7 +60,7 @@ export default function Navbar() {
 			<Link
 				href={'/contact'}
 				className={` hover:underline cursor-pointer ${
-					router.route == '/contact'
+					route == '/contact'
 						? 'font-bold text-fg1'
 						: 'text-fg4'
 				}`}
